@@ -1,0 +1,24 @@
+# Byte-compiled / cache / venv
+__pycache__/
+*.py[cod]
+*.swp
+.venv/
+venv/
+
+# Environment / IDE stuff
+.env
+*.env
+.DS_Store
+.idea/
+.vscode/
+
+# Screenshots and media (optional)
+screenshots/
+assets/*.gif
+
+# Pytest cache
+.pytest_cache/
+
+# Logs
+*.log
+
