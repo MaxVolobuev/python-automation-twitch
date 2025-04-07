@@ -49,6 +49,20 @@ echo "ENV=prod" > .env
 make test
 ```
 
+---
+
+## For Contributors
+
+If you add or update dependencies, please update `requirements.txt` using:
+
+```bash
+pip list --format=freeze > requirements.txt
+```
+
+> This ensures the file stays clean and only contains top-level project dependencies.
+
+---
+
 Screenshots will be saved in the `screenshots/` folder.  
 Example filename: `streamer_page_2025-04-07_22-10-03.png`
 
@@ -59,6 +73,29 @@ Example filename: `streamer_page_2025-04-07_22-10-03.png`
 <p align="center">
   <img src="https://github.com/MaxVolobuev/python-automation-twitch/raw/main/demo.gif" alt="Demo" />
 </p>
+
+---
+
+---
+
+## Project Structure
+
+```
+python-automation-twitch/
+├── config/
+│   └── config_loader.py
+├── pages/
+│   ├── twitch_directory_page.py
+│   └── twitch_stream_page.py
+├── tests/
+│   ├── twitch_search.py
+├── .env
+├── .gitignore
+├── demo.gif
+├── Makefile
+├── README.md
+└── requirements.txt
+```
 
 ---
 
