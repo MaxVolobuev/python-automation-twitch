@@ -2,13 +2,13 @@
 
 Automated UI test using **Python + Selenium** for the **mobile version of Twitch**.
 
-Emulates a mobile device: `Pixel 2`  
-Uses the **Page Object Model (POM)** structure  
-Handles pop-ups, dynamic elements, and captures a screenshot
+- Emulates a mobile device: `Pixel 2`  
+- Uses the **Page Object Model (POM)** structure  
+- Handles pop-ups, dynamic elements, and captures a screenshot
 
 ---
 
-## 🚀 What this test does
+## What this test does
 
 1. Opens Twitch in a mobile browser emulator
 2. Searches for **StarCraft II**
@@ -20,14 +20,14 @@ Handles pop-ups, dynamic elements, and captures a screenshot
 
 ---
 
-## 🔧 Installation
+## Installation
 
 > Make sure you have **Python 3.10+** and **Google Chrome v135+** installed
 
 ```bash
 # Clone the repository
 git clone https://github.com/MaxVolobuev/python-automation-twitch
-cd python-automation-twith
+cd python-automation-twitch
 
 # Create and activate a virtual environment
 python3 -m venv venv
@@ -37,22 +37,39 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Create a .env file in the project root:
-ENV=prod
+echo "ENV=prod" > .env
+```
 
-# Run a test
-run a test with a command
-ENV=prod python3 -m pytest -s tests/twitch_search.py
+---
 
-# Screenshots will be saved in the screenshots/ folder.
-# Example filename:
-streamer_page_2025-04-07_22-10-03.png
+## ▶ Run the test
 
-# Demo GIF
-[Demo](https://github.com/MaxVolobuev/python-automation-twitch/blob/main/demo.gif)
+```bash
+# One-line setup & test run (recommended)
+make test
+```
 
-# Author
-Maksym Volobuiev
+Screenshots will be saved in the `screenshots/` folder.  
+Example filename: `streamer_page_2025-04-07_22-10-03.png`
+
+---
+
+## Demo GIF
+
+<p align="center">
+  <img src="https://github.com/MaxVolobuev/python-automation-twitch/raw/main/demo.gif" alt="Demo" />
+</p>
+
+---
+
+## Author
+
+**Maksym Volobuiev**  
 Made with ❤️ for automation and streaming
 
-# License
-MIT — free to use, improve, share. Give credit if helpful 🙌
+---
+
+## License
+
+MIT — free to use, improve, share.  
+Give credit if helpful
