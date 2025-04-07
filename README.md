@@ -48,7 +48,7 @@ ENV=prod python3 -m pytest -s tests/twitch_search.py
 streamer_page_2025-04-07_22-10-03.png
 
 # Demo GIF
-[Demo](https://github.com/MaxVolobuev/python-automation-twitch/raw/main/demo.gif)
+[Demo](https://github.com/MaxVolobuev/python-automation-twitch/blob/main/demo.gif)
 
 # Author
 Maksym Volobuiev
